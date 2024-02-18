@@ -17,7 +17,7 @@
     ></script>
   </head>
   <body>
-    <div class="fixed-header fixed">
+    <div class="fixed-header fixed mobile">
       <div class="logo">
         <div class="img-container">
           <img src="./Assets/img/logo_w.png" />
@@ -40,9 +40,12 @@
           <i class="fa-brands fa-github"></i>
         </a>
       </div>
+      <div class="mobile-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </div>
     <header>
-      <div class="background img-container">
+      <div class="background">
         <img
           class="background-img"
           src="./Assets/img/main_background.jpg"
@@ -149,6 +152,86 @@
         </div>
       </div>
     </section>
+
+    <section class="main-skill">
+      <div class="main-skill-container">
+        <div class="section-title center">
+          <p>Skill & Activities</p>
+        </div>
+        <div class="main-skill-content">
+          <p>
+            I like working in different environments and quickly adapting to new
+            situations. I have excellent time management and organization
+            skills. Further, I have a positive attitude and I’m excited about
+            learning new things and doing new tasks. I’m proud of my
+            resourcefulness when doing difficult tasks because it has helped me
+            problem-solve in a variety of situations.
+          </p>
+          <div class="main-skill-btn">Learn More</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact-container">
+        <div class="section-title center">
+          <p>Contact</p>
+        </div>
+        <form class="contact-form">
+          <div class="form-first-name">
+            <label for="first-name">First name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="First Name"
+              required
+            />
+          </div>
+          <div class="form-last-name">
+            <label for="last-name">Last name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Last Name"
+            />
+          </div>
+          <div class="form-Phone">
+            <label for="Phone">Phone</label>
+            <input
+              type="tel"
+              id="Phone"
+              name="Phone"
+              placeholder="Phone"
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            />
+          </div>
+          <div class="form-email">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form-body">
+            <label for="body">Message</label>
+            <textarea
+              type="text"
+              id="body"
+              name="body"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+          <button class="contact-btn" type="submit">SEND</button>
+        </form>
+      </div>
+    </section>
+
     <footer>
       <div class="logo">
         <div class="img-container">
