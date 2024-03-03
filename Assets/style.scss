@@ -1,3 +1,5 @@
+$theme-color: #200b2a;
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,6 +10,12 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #333333;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
 }
 
 .img-container > img {
@@ -427,6 +435,12 @@ footer {
     > div {
       max-width: 100% !important;
       width: 100% !important;
+    }
+  }
+
+  footer {
+    .menu {
+      display: none;
     }
   }
 }

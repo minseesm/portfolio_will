@@ -4,13 +4,18 @@ const headerMenu = document.querySelector(".fixed-header > .menu");
 headerBtn.addEventListener("click", () => {
   headerMenu.classList.toggle("show");
 });
-document.addEventListener("DOMContentLoaded", () => {
-  if (window.screen.width <= 767) {
+
+const fixedHeaderSet = () => {
+  if (document.documentElement.clientWidth <= 767) {
     document.querySelector(".fixed-header").classList.add("mobile");
   } else {
     document.querySelector(".fixed-header").classList.remove("mobile");
   }
-});
+};
+
+document.addEventListener("DOMContentLoaded", fixedHeaderSet);
+
+window.addEventListener("resize", fixedHeaderSet);
 
 const blogUrl =
   "https://www.googleapis.com/blogger/v3/blogs/2399953/posts/bypath?path=/2011/08/latest-updates-august-1st.html&key=AIzaSyCNHLGddjqvCrzOIBF_jjW11YhDQjkMwRw";
